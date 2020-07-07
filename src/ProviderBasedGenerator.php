@@ -76,7 +76,7 @@ class ProviderBasedGenerator extends UrlGenerator implements VersatileGeneratorI
 
         $debug_message = $this->getRouteDebugMessage($name);
 
-        return $this->doGenerate($compiledRoute->getVariables(), $route->getDefaults(), $route->getRequirements(), $compiledRoute->getTokens(), $parameters, $debug_message, $referenceType, $hostTokens);
+        return $this->doGenerate($compiledRoute->getVariables(), $route->getDefaults(), $route->getRequirements(), $compiledRoute->getTokens(), $parameters, $debug_message, $referenceType, $hostTokens, $route->getSchemes());
     }
 
     /**
